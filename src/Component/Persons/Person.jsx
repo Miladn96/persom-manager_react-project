@@ -1,14 +1,27 @@
-import React, { Component } from 'react'
+import React from "react";
 
-const Person = ({fullName , deletePerson , changed}) => {
-    return (
-        <div className={"person"}>
-            {`${fullName}`}
-            <br />
-            <button onClick={deletePerson} className={"btn btn-denger"}>x</button>
-            <input className={"inpt inpt-green"} type="text" placeholder={fullName} onChange={changed} />
+const Person = ({ fullName, deletePerson, changed }) => {
+  return (
+    <div className={"card text-white bg-info mb-3 mt-3 mx-auto w-25"}>
+      <div class="card-body text-center">
+        <p className="d-block h1">{`${fullName}`}</p>
+        <div className="input-group justify-content-center">
+          <input
+            className={"form-control w-50"}
+            type="text"
+            placeholder={fullName}
+            onChange={changed}
+          />
+          <div className="input-group-prepend">
+            <button
+              onClick={deletePerson}
+              className={"btn btn-sm btn-danger fa fa-trash"}
+            />
+          </div>
         </div>
-    );
-}
+      </div>
+    </div>
+  );
+};
 
 export default Person;

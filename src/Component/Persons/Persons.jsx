@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Person from "./Person";
 
 const Persons = ({ persons, deletePerson , personChange}) => {
   return (
-    <div>
+    <div className="m-3">
       {persons.map((p) => (
         <Person
           fullName={p.fullName}
