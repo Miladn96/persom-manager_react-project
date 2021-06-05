@@ -108,21 +108,10 @@ class App extends Component {
     var prsns = null;
     if (showPersons) {
       prsns = (
-        <Persons
-          persons={persons}
-          id={persons.id}
-          deletePerson={this.handleDeletePerson}
-          personChange={this.handlNameChange}
-        />
+        <Persons/>
       );
     }
-    if (persons.length <= 2) {
-      className.personLength = "danger";
-    } else if (persons.length <= 5) {
-      className.personLength = "warning";
-    } else {
-      className.personLength = "info";
-    }
+    
     return (
       <SimpleContext.Provider
         value={{
