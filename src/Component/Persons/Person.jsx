@@ -1,6 +1,5 @@
 import React from "react";
-import SimpleContext from "../../Contex/SimpleContext";
-const Person = ({fullName , changed , deletePerson}) => {
+const Person = ({ fullName, changed, deletePerson }) => {
   return (
     <div className={"card text-white bg-info mb-3 mt-3 mx-auto w-25"}>
       <div class="card-body text-center">

@@ -11,7 +11,7 @@ const AddPerson = () => {
           <Form.Control
             placeholder={"اضافه کردن شخص جدید"}
             onChange={context.handleOnChanged}
-            value={context.state.person}
+            value={context.SinglePerson}
             className={"p-3 px-5"}
             dir="rtl"
           />
@@ -24,7 +24,7 @@ const AddPerson = () => {
         </ButtonGroup>
       </Form>
       <Button
-        variant={context.state.showPersons ? "success" : "danger"}
+        variant={context.ShowPersons ? "success" : "danger"}
         size="lg"
         onClick={context.handleShowPerson}
       >
